@@ -1,0 +1,62 @@
+{
+  "version": "2",
+  "templates":
+  [
+    {
+      "type": 1,
+      "title": "WordPress",
+      "description": "Plantilla para sitio wordpress",
+      "note": "Please provide the site details.",
+      "categories": ["CMS"],
+      "platform": "linux",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg",
+      "repository": {
+        "url": "https://github.com/pablosalgador/portainer-templates",
+        "stackfile": "stacks/wordpress/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "WORDPRESS_DB_USER",
+          "label": "Database User",
+          "default": "root"
+        },
+        {
+          "name": "WORDPRESS_DB_PASSWORD",
+          "label": "Database Password",
+          "default": ""
+        },
+        {
+          "name": "WORDPRESS_DB_NAME",
+          "label": "Database Name",
+          "default": "wordpress"
+        },
+        {
+          "name": "WORDPRESS_SITE_TITLE",
+          "label": "Site Title",
+          "default": "My WordPress Site"
+        },
+        {
+          "name": "WORDPRESS_ADMIN_USER",
+          "label": "Admin Username",
+          "default": "admin"
+        },
+        {
+          "name": "WORDPRESS_ADMIN_PASSWORD",
+          "label": "Admin Password",
+          "default": "changeme"
+        },
+        {
+          "name": "WORDPRESS_ADMIN_EMAIL",
+          "label": "Admin Email",
+          "default": "admin@example.com"
+        },
+        {
+          "name": "WORDPRESS_PORT",
+          "label": "Wordpress Port",
+          "default": "8000"
+        }
+      ]
+    }
+  ]
+}
+
