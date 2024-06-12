@@ -3,7 +3,7 @@
   "templates":
   [
     {
-      "type": 2,
+      "type": 3,
       "title": "WordPress",
       "description": "Plantilla para editar un sitio wordpress",
       "note": "Please provide the site details.",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "type": 2,
+      "type": 3,
       "title": "WordPress",
       "description": "WordPress setup with a MySQL database",
       "note": "Deploys a WordPress instance connected to a MySQL database.",
@@ -67,7 +67,7 @@
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
       "repository": {
         "url": "https://github.com/portainer/templates",
-        "stackfile": "stacks/wordpress/docker-stack.yml"
+        "stackfile": "stacks/wordpress/docker-compose.yml"
       },
       "env": [
         {
