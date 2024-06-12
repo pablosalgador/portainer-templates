@@ -3,7 +3,7 @@
   "templates":
   [
     {
-      "type": 1,
+      "type": 2,
       "title": "WordPress",
       "description": "Plantilla para sitio wordpress",
       "note": "Please provide the site details.",
