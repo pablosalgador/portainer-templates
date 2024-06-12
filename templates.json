@@ -5,7 +5,7 @@
     {
       "type": 2,
       "title": "WordPress",
-      "description": "Plantilla para sitio wordpress",
+      "description": "Plantilla para editar un sitio wordpress",
       "note": "Please provide the site details.",
       "categories": ["CMS"],
       "platform": "linux",
