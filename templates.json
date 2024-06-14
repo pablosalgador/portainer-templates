@@ -59,6 +59,11 @@
           "name": "WORDPRESS_URL",
           "label": "Wordpress url",
           "default": "http://localhost"
+        },
+        {
+          "name": "WORDPRESS_PLUGINS",
+          "label": "Wordpress Plugins",
+          "default": "ninja-forms cookie-law-info better-wp-security table-of-contents-plus wordpress-seo child-theme-configurator"
         }
       ]
     }
