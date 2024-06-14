@@ -16,23 +16,28 @@
       },
       "env": [
         {
+          "name": "WORDPRESS_PORT",
+          "label": "Puerto",
+          "default": "8001"
+        },
+        {
           "name": "WORDPRESS_DB_USER",
-          "label": "Database User",
+          "label": "DB - User",
           "default": "usuario"
         },
         {
           "name": "WORDPRESS_DB_PASSWORD",
-          "label": "Database Password",
+          "label": "DB - Password",
           "default": "cambiame_abcd1234.-"
         },
         {
           "name": "WORDPRESS_DB_NAME",
-          "label": "Database Name",
+          "label": "DB Name",
           "default": "wordpress"
         },
         {
           "name": "WORDPRESS_SITE_TITLE",
-          "label": "Site Title",
+          "label": "WP Site Title",
           "default": "Mi sitio wordpress"
         },
         {
@@ -49,11 +54,6 @@
           "name": "WORDPRESS_ADMIN_EMAIL",
           "label": "WP Admin Email",
           "default": "admin@example.org"
-        },
-        {
-          "name": "WORDPRESS_PORT",
-          "label": "Wordpress Port",
-          "default": "8001"
         },
         {
           "name": "WORDPRESS_URL",
