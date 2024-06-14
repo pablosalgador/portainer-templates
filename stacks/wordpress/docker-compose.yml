@@ -48,7 +48,7 @@ services:
       WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
       WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
       WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
-    entrypoint: ["sh", "-c", "until wp core is-installed --allow-root; do sleep 5; done; wp core install --url='http://localhost' --title='Mi Sitio' --admin_user='admin' --admin_password='admin' --admin_email='admin@example.com' --skip-email --allow-root"]
+    entrypoint: ['sh', '-c']
 
 volumes:
   wordpress:
