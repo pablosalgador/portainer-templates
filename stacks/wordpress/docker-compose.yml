@@ -61,8 +61,8 @@ services:
       wp option update time_format "H:i" &&
       wp option update start_of_week 1 &&
       wp option update blog_public 0 &&
-      wp rewrite structure '/%postname%/' --path=$PATHNAME --hard &&
-      wp rewrite flush --path=$PATHNAME --hard
+      wp rewrite structure '/%postname%/' --hard &&
+      wp rewrite flush --hard
       '
       
 volumes:
