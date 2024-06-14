@@ -37,6 +37,11 @@ services:
     depends_on:
       - wordpress
 
+  wpcli:
+    image: wordpress:cli
+    volumes:
+      - wordpress:/var/www/html
+
 volumes:
   wordpress:
   db:
