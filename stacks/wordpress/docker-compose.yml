@@ -41,8 +41,8 @@ services:
     image: wordpress:cli
     volumes:
       - wordpress:/var/www/html
-    depends_on:
-      - wordpress
+    entrypoint: ['sh', '-c']
+    command: ['wp --allow-root']
 
 volumes:
   wordpress:
