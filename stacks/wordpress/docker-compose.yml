@@ -66,6 +66,7 @@ services:
       wp rewrite flush --hard &&
       wp plugin install ${WORDPRESS_PLUGINS} &&
       wp plugin update --all &&
+      wp language plugin update &&
       wp theme delete twentynineteen &&
       wp theme delete twentytwenty &&
       wp site empty --yes
