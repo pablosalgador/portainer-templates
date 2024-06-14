@@ -3,7 +3,8 @@ version: '2'
 services:
 
   wordpress:
-    image: wordpress:php8.3-fpm
+    build:
+      context: ./custom-wordpress
     restart: always
     environment:
       WORDPRESS_DB_HOST: db
