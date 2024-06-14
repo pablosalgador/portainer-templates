@@ -18,12 +18,12 @@
         {
           "name": "WORDPRESS_DB_USER",
           "label": "Database User",
-          "default": "root"
+          "default": "usuario"
         },
         {
           "name": "WORDPRESS_DB_PASSWORD",
           "label": "Database Password",
-          "default": ""
+          "default": "cambiame_abcd1234.-"
         },
         {
           "name": "WORDPRESS_DB_NAME",
@@ -33,47 +33,32 @@
         {
           "name": "WORDPRESS_SITE_TITLE",
           "label": "Site Title",
-          "default": "My WordPress Site"
+          "default": "Mi sitio wordpress"
         },
         {
           "name": "WORDPRESS_ADMIN_USER",
-          "label": "Admin Username",
+          "label": "WP Admin Username",
           "default": "admin"
         },
         {
           "name": "WORDPRESS_ADMIN_PASSWORD",
-          "label": "Admin Password",
-          "default": "changeme"
+          "label": "WP Admin Password",
+          "default": "cambiame_abcd1234.-"
         },
         {
           "name": "WORDPRESS_ADMIN_EMAIL",
-          "label": "Admin Email",
-          "default": "admin@example.com"
+          "label": "WP Admin Email",
+          "default": "admin@example.org"
         },
         {
           "name": "WORDPRESS_PORT",
           "label": "Wordpress Port",
-          "default": "8000"
-        }
-      ]
-    },
-    {
-      "type": 3,
-      "title": "WordPress",
-      "description": "WordPress setup with a MySQL database",
-      "note": "Deploys a WordPress instance connected to a MySQL database.",
-      "categories": ["CMS"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
-      "repository": {
-        "url": "https://github.com/portainer/templates",
-        "stackfile": "stacks/wordpress/docker-compose.yml"
-      },
-      "env": [
+          "default": "8001"
+        },
         {
-          "name": "MYSQL_DATABASE_PASSWORD",
-          "label": "Database root password",
-          "description": "Password used by the MySQL root user."
+          "name": "WORDPRESS_URL",
+          "label": "Wordpress url",
+          "default": "http://localhost"
         }
       ]
     }
