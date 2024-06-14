@@ -42,14 +42,19 @@ services:
     volumes:
       - wordpress:/var/www/html
     depends_on:
+      - db
       - wordpress
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
       WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
       WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
-    
-
+    command: >
+      /bin/sh -c '
+      sleep 10;
+      wp config list
+      '
+      
 volumes:
   wordpress:
   db:
