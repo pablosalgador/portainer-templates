@@ -41,8 +41,10 @@ services:
     image: wordpress:cli
     volumes:
       - wordpress:/var/www/html
-    entrypoint: ['sh', '-c']
-    command: ['wp --allow-root']
+    depends_on:
+      - wordpress
+    entrypoint: ["sh", "-c", "until wp core is-installed --allow-root; do sleep 5; done; wp core install --url='http://localhost' --title='Mi Sitio' --admin_user='admin' --admin_password='admin' --admin_email='admin@example.com' --skip-email --allow-root"]
+
 
 volumes:
   wordpress:
