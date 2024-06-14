@@ -67,8 +67,8 @@ services:
       wp plugin install ${WORDPRESS_PLUGINS} &&
       wp plugin update --all &&
       wp language plugin update --all &&
-      wp theme delete twentynineteen &&
-      wp theme delete twentytwenty &&
+      wp theme delete twentytwentytwo &&
+      wp theme delete twentytwentythree &&
       wp site empty --yes
       '
       
