@@ -41,6 +41,8 @@ services:
     image: wordpress:cli
     volumes:
       - wordpress:/var/www/html
+    depends_on:
+      - wordpress
 
 volumes:
   wordpress:
